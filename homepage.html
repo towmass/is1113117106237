@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -13,8 +14,45 @@
   <!-- End of Bootstrap -->
 </head>
 
-<body>
-  <h1 class="mainheading">117106237 - IS1113 Project!</h1>
-  <a href="cv_page1.html" class="btn btn-success">Curriculum Vitae</a>
+<body class="bg-light">
+    <div class="card text-center w-50 p-3 mx-auto" style="width: 24rem;">
+        <div class="card-header">
+          <h1 class="mainheading">117106237 - IS1113 Project</h1>
+        </div>
+        <br/>
+        <div class="alert alert-info alert-dismissible fade show text-left" role="alert">
+            <span class="badge badge-info">Info</span><strong> Welcome!</strong> This is my personal CV.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+      
+          <div class="alert alert-warning alert-dismissible fade show text-left" role="alert">
+              <span class="badge badge-warning">Tip</span> You can hide these alerts
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+      
+          <div class="alert alert-danger alert-dismissible fade show text-left" role="alert">
+              <span class="badge badge-danger">Warning</span> Make sure you go through every page.
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+        <div class="card-body">
+          <p class="card-text">For accessing my CV, please click the button below.</p>
+          <a href="cv_page1.html" class="btn btn-primary">Curriculum Vitae</a>
+        </div>
+        <div class="card-footer text-muted">
+            &copy; 2018 Tomas Mandok
+        </div>
+      </div>
 </body>
 </html>
+
+<!-- To push it on GitHub via c9, use these commands in Terminal:
+git add .
+git commit -am "commit comment text"
+git push
+-just a note for later use, not concerning me bc of VSC-->
