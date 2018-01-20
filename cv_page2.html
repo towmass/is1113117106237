@@ -14,18 +14,49 @@
      <!-- End of Bootstrap -->
   </head>
 
-  <body class="bg-light">
-    <h1 class="mainheading">Educational Details</h1>
-    <p><strong>College:</strong> University College Cork</p>
-    <p><strong>Course:</strong> Business</p>
-    <p><strong>Year:</strong> January 2018-May 2018</p>
-
+  <body class="bg-dark">
+      <div class="card text-center w-50 p-3 mx-auto" style="width: 24rem;">
+          <div class="card-header" style="background-color: #011535;">
+              <h1 class="mainheading">Educational Details</h1>
+            </div>
     <br/>
 
-    <p><strong>College:</strong> VSB-TUO</p>
-    <p><strong>Course:</strong> Management</p>
-    <p><strong>Year:</strong> 2014-2018</p>
+    <table class="table table-striped text-left">
+        <tbody>
+          <tr>
+            <th scope="row">College:</th>
+            <td>University College Cork</td>
+          </tr>
+          <tr>
+            <th scope="row">Course:</th>
+            <td>Business</td>
+          </tr>
+          <tr>
+            <th scope="row">Year:</th>
+            <td>2018</td>
+          </tr>
+        </tbody>
+      </table>
+    <br/>
 
+    <table class="table table-striped text-left">
+          <tbody>
+            <tr>
+              <th scope="row">College:</th>
+              <td>VSB - Technical University Ostrava</td>
+            </tr>
+            <tr>
+              <th scope="row">Course:</th>
+              <td>Management</td>
+            </tr>
+            <tr>
+              <th scope="row">Year:</th>
+              <td>2014-2018</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <br/>
     <nav aria-label="CV navigation pages bottom center" role="toolbar">
         <ul class="pagination pagination-lg justify-content-center">
             <!-- Previous button -->
@@ -51,5 +82,6 @@
           </li>
         </ul>
       </nav>
+    </div>
   </body>
 </html>
