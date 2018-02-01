@@ -30,7 +30,7 @@ th {
 .button1 {
   color: rgb(255, 255, 255);
   text-decoration: none;
-  background: linear-gradient(rgb(60, 233, 26), rgb(5, 189, 5));
+  background: linear-gradient(rgb(54, 207, 23), rgb(5, 189, 5));
   border: 4px rgb(70, 146, 72);
   border-radius: 5px;
   padding: 15px;
@@ -38,7 +38,7 @@ th {
 .button1:hover {
   color: rgb(255, 255, 255);
   text-decoration: none;
-  background: linear-gradient(0deg,rgb(4, 231, 42), rgb(2, 160, 10));
+  background: linear-gradient(0deg,rgb(15, 179, 42), rgb(3, 148, 10));
   border: 10px rgb(43, 92, 44);
   border-radius: 5px;
   box-shadow: 0 4px 10px 0 rgba(0,0,0,0.24), 0 7px 30px 0 rgba(0,0,0,0.19);
@@ -48,7 +48,7 @@ th {
 .button2 {
   color: rgb(255, 255, 255);
   text-decoration: none;
-  background: linear-gradient(rgb(82, 200, 255), rgb(20, 125, 245));
+  background: linear-gradient(rgb(30, 182, 253), rgb(20, 125, 245));
   border: 4px rgb(70, 146, 72);
   border-radius: 5px;
   padding: 15px;
@@ -56,8 +56,26 @@ th {
 .button2:hover {
   color: rgb(255, 255, 255);
   text-decoration: none;
-  background: linear-gradient(0deg,rgb(2, 167, 243), rgb(20, 125, 245));
+  background: linear-gradient(0deg,rgb(3, 143, 207), rgb(14, 94, 185));
   border: 10px rgb(43, 92, 44);
+  border-radius: 5px;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.24), 0 7px 30px 0 rgba(0,0,0,0.19);
+  padding: 15px;
+}
+
+.button3 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background: linear-gradient(rgb(241, 50, 50), rgb(199, 5, 5));
+  border: 4px rgb(160, 28, 28);
+  border-radius: 5px;
+  padding: 15px;
+}
+.button3:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background: linear-gradient(0deg,rgb(223, 32, 32), rgb(184, 0, 0));
+  border: 10px rgb(180, 17, 17);
   border-radius: 5px;
   box-shadow: 0 4px 10px 0 rgba(0,0,0,0.24), 0 7px 30px 0 rgba(0,0,0,0.19);
   padding: 15px;

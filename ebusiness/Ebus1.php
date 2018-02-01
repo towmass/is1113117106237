@@ -1,8 +1,13 @@
+<?php
+  echo "<link rel='stylesheet' type='text/css' href='../mystylesheet.css' />";
+?>
+
 <!DOCTYPE html>
 <html>
 
 <head>
-  <title>Select Product</title>
+    
+    <title>Select Product</title>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -13,7 +18,7 @@
 
 <body>
     <div class="content">
-        <h4>Select a Product</h4>
+        <h4 class="mainheading">Select a Product</h4>
 
         <br/>
 
