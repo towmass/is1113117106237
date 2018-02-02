@@ -48,13 +48,15 @@
 
         <br/>
 
-            <button type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
+            <button type="submit" class="button2" id="btnProceed" disabled>Add to Shopping Cart</button>
         </form>
 
         <br/>
 
-        <button onClick="calcSub()">Calculate Cost</button>
-        <a role="button" href="Ebus1.php">Clear Choice</a> <!-- link to the same page to manually refresh it and clear user's selection -->
-      </div>
+        <button onClick="calcSub()" class="button1">Calculate Cost</button>
+        <a role="button" href="Ebus1.php" class="button3">Clear Choice</a> <!-- link to the same page to manually refresh it and clear user's selection -->
+    <br/>
+    <br/>  
+    </div>
 </body>
 </html>
