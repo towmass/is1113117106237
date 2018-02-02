@@ -6,7 +6,8 @@ body {
   max-width: 550px;
   margin: auto;
   background-color: white;
-  height: 220px;
+  min-height: 220px;
+  overflow: hidden;
   border-radius: 20px;
 }
 .mainheading {
@@ -23,6 +24,12 @@ body {
   text-align: center;
   color: rgb(138, 137, 137);
   font-size: 11px;
+}
+.mainheadingCV {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(145deg, #0fb8ad 1%, #1fc8db 52%, #2cb5e8 76%);
 }
 th {
   width: 40%;

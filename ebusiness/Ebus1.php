@@ -1,7 +1,3 @@
-<?php
-  echo "<link rel='stylesheet' type='text/css' href='../mystylesheet.css' />";
-?>
-
 <!DOCTYPE html>
 <html>
 
@@ -18,11 +14,11 @@
 
 <body>
     <div class="content">
-        <h4 class="mainheading">Select a Product</h4>
+        <h1 class="mainheading">Select a Product</h1>
 
         <br/>
 
-        <form method="POST" action="Ebus2.php">
+        <form method="POST" action="Ebus2.php" style="margin-left: 20px">
             <label for="salesforce">
                 <input type="radio" id="salesforce" name="product" checked onClick="disabledtnProceed()"/>
                 SalesForce @ $100
