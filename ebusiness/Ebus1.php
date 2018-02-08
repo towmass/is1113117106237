@@ -43,7 +43,7 @@
 
             <label for="total">
                 Total
-                <inout type="text" id="total" value="0.00" readonly/>
+                <input type="text" id="total" value="0.00" readonly/>
             </label>
 
         <br/>
@@ -52,9 +52,12 @@
         </form>
 
         <br/>
-
+        <br/>
+    
+    <div style="margin-left: 20px">
         <button onClick="calcSub()" class="button1">Calculate Cost</button>
         <a role="button" href="Ebus1.php" class="button3">Clear Choice</a> <!-- link to the same page to manually refresh it and clear user's selection -->
+    </div>
     <br/>
     <br/>  
     </div>
