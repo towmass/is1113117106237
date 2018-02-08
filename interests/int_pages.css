@@ -12,21 +12,24 @@ body {
 }
 
 #section1 {
-    background-image: url("http://eskipaper.com/images/manhattan-background-1.jpg");
+    /* background-image: url("http://eskipaper.com/images/manhattan-background-1.jpg"); */
+    background-image: url("newyork.jpg");
     background-size: cover;
     background-color: rgba(100, 69, 2, 0.685);
     font-size: 3em;
 }
 
 #section2 {
-    background-image: url("https://wallup.net/wp-content/uploads/2016/04/06/343611-Japan-Mount_Fuji-building-nature-Asian_architecture-trees.jpg");
+    /* background-image: url("https://wallup.net/wp-content/uploads/2016/04/06/343611-Japan-Mount_Fuji-building-nature-Asian_architecture-trees.jpg"); */
+    background-image: url("japan.jpg");    
     background-size: cover;
     background-color: rgb(165, 5, 5);
     font-size: 3em;
 }
 
 #section3 {
-    background-image: url("https://www.ostrava.cz/cs/o-meste/prezentace/newsletter/ostravska-radnice-11-2015/vtz.jpg");
+    /* background-image: url("https://www.ostrava.cz/cs/o-meste/prezentace/newsletter/ostravska-radnice-11-2015/vtz.jpg"); */
+    background-image: url("ostrava.jpg");    
     background-size: cover;
     background-color: rgb(4, 68, 100);
     font-size: 3em;
