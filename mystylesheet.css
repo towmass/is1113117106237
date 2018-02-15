@@ -107,18 +107,25 @@ th {
   padding: 15px;
 }
 
+.ebus {
+  margin-left: 20px;
+  margin-right: 20px;
+}
 .ebus2input {
   width: 100%;
   outline: none;
   padding: 8px 12px;
   margin: 4px 0px;
   box-sizing: border-box;
-  border-bottom: 2px solid rgb(90, 190, 248);
-  background-color: rgb(225, 226, 226);
+  border-bottom: 2px solid rgb(103, 197, 252);
+  background-color: rgb(243, 243, 243);
   border-radius: 5px;
   resize: none;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
 }
 .ebus2input:focus {
-  border-bottom: 2px solid rgb(0, 153, 241);
-  background-color: rgb(211, 212, 212);
+  border-bottom: 2px solid rgb(2, 141, 221);
+  background-color: rgb(236, 236, 236);
 }

@@ -18,7 +18,7 @@
 
         <br/>
 
-        <form method="POST" action="Ebus2.php" style="margin-left: 20px">
+        <form method="POST" action="Ebus2.php" class="ebus">
             <label for="salesforce">
                 <input type="radio" id="salesforce" name="product" checked onClick="disabledtnProceed()"/>
                 SalesForce @ $100
@@ -54,7 +54,7 @@
         <br/>
         <br/>
     
-    <div style="margin-left: 20px">
+    <div class="ebus">
         <button onClick="calcSub()" class="button1">Calculate Cost</button>
         <a role="button" href="Ebus1.php" class="button3">Clear Choice</a> <!-- link to the same page to manually refresh it and clear user's selection -->
     </div>

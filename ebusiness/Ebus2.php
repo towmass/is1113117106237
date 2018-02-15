@@ -22,22 +22,24 @@ session_start();
 
         <br>
 
-        <form method="POST" action="Ebus3.php" style="margin-left: 20px">
+        <form method="POST" action="Ebus3.php" class="ebus">
 
             <label for="user_name">Name:</label>
             <input type="text" id="user_name" class="ebus2input">
-        <br>
+        <br><br>
             <label for="user_email">Email:</label>
             <input type="text" id="user_email" class="ebus2input">
-        <br>
+        <br><br>
             <label for="user_pin">PIN:</label>
             <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4" class="ebus2input">
-        <br>
-            <button onClick="validateDetails()" class="button1">Validate</button>
-        <br>
+        <br><br>
             <button type="submit" id="btnPurchase" class="button2" disabled>Proceed with Purchase</button>
         
         </form>
+
+        <div class="ebus">
+            <button onClick="validateDetails()" class="button1">Validate</button>
+        </div>
 
         <br>
         <br>
