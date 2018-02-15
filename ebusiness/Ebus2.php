@@ -20,20 +20,24 @@ session_start();
     <div class="content">
         <h2 class="mainheading">Please enter your payment details</h2>
 
-        <br/>
+        <br>
 
         <form method="POST" action="Ebus3.php" style="margin-left: 20px">
 
-            <label for="user_pin">PIN:</label>
-            <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4">
-            <button type="submit" id="btnPurchase" class="button2" disabled>Proceed with Purchase</button>
-        </form>
-
+            <label for="user_name">Name:</label>
+            <input type="text" id="user_name" class="ebus2input">
         <br>
-
-        <div style="margin-left: 20px">
+            <label for="user_email">Email:</label>
+            <input type="text" id="user_email" class="ebus2input">
+        <br>
+            <label for="user_pin">PIN:</label>
+            <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4" class="ebus2input">
+        <br>
             <button onClick="validateDetails()" class="button1">Validate</button>
-        </div>
+        <br>
+            <button type="submit" id="btnPurchase" class="button2" disabled>Proceed with Purchase</button>
+        
+        </form>
 
         <br>
         <br>
@@ -41,11 +45,10 @@ session_start();
     
     <?php
     // Set session variables
+    $_SESSION["user_name"] = $_POST["user_name"];
+    $_SESSION["user_email"] = $_POST["user_email"];
     $_SESSION["total"] = $_POST["total"];
     ?>
-    
-<div class="nevim">assadd
-    </div>
 
 
     </body>

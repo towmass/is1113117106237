@@ -12,12 +12,12 @@ body {
   border-radius: 20px;
 }
 .mainheading {
-    text-align: center;
-    color: white;
-    padding: 20px;
-    background: linear-gradient(145deg, #0fb8ad 1%, #1fc8db 52%, #2cb5e8 76%);
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
-  }
+  text-align: center;
+  color: white;
+  padding: 20px;
+  background: linear-gradient(145deg, #0fb8ad 1%, #1fc8db 52%, #2cb5e8 76%);
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+}
 .homepage {
   text-align: center;
 }
@@ -46,10 +46,10 @@ th {
 .button1:hover {
   color: rgb(255, 255, 255);
   text-decoration: none;
-  background: linear-gradient(0deg,rgb(7, 173, 35), rgb(2, 134, 9));
+  background: linear-gradient(0deg, rgb(7, 173, 35), rgb(2, 134, 9));
   border: 10px rgb(43, 92, 44);
   border-radius: 5px;
-  box-shadow: 0 2px 7px 0 rgba(0,0,0,0.24), 0 5px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.24), 0 5px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 15px;
 }
 
@@ -64,10 +64,10 @@ th {
 .button2:hover {
   color: rgb(255, 255, 255);
   text-decoration: none;
-  background: linear-gradient(0deg,rgb(3, 143, 207), rgb(14, 94, 185));
+  background: linear-gradient(0deg, rgb(3, 143, 207), rgb(14, 94, 185));
   border: 10px rgb(43, 92, 44);
   border-radius: 5px;
-  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.24), 0 7px 30px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.24), 0 7px 30px 0 rgba(0, 0, 0, 0.19);
   padding: 15px;
 }
 
@@ -82,10 +82,10 @@ th {
 .button3:hover {
   color: rgb(255, 255, 255);
   text-decoration: none;
-  background: linear-gradient(0deg,rgb(223, 32, 32), rgb(184, 0, 0));
+  background: linear-gradient(0deg, rgb(223, 32, 32), rgb(184, 0, 0));
   border: 10px rgb(180, 17, 17);
   border-radius: 5px;
-  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.24), 0 7px 30px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.24), 0 7px 30px 0 rgba(0, 0, 0, 0.19);
   padding: 15px;
 }
 
@@ -100,9 +100,25 @@ th {
 .button4:hover {
   color: rgb(255, 255, 255);
   text-decoration: none;
-  background: linear-gradient(0deg,rgb(90, 8, 197), rgb(78, 2, 129));
+  background: linear-gradient(0deg, rgb(90, 8, 197), rgb(78, 2, 129));
   border: 10px rgb(180, 17, 17);
   border-radius: 5px;
-  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.24), 0 7px 30px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.24), 0 7px 30px 0 rgba(0, 0, 0, 0.19);
   padding: 15px;
+}
+
+.ebus2input {
+  width: 100%;
+  outline: none;
+  padding: 8px 12px;
+  margin: 4px 0px;
+  box-sizing: border-box;
+  border-bottom: 2px solid rgb(90, 190, 248);
+  background-color: rgb(225, 226, 226);
+  border-radius: 5px;
+  resize: none;
+}
+.ebus2input:focus {
+  border-bottom: 2px solid rgb(0, 153, 241);
+  background-color: rgb(211, 212, 212);
 }

@@ -8,11 +8,13 @@ session_start();
         <title>Receipt</title>
     </head>
     <body>
-        <h4>Receipt</h4>
+        <h4>Purchase Receipt</h4>
 
         <?php
         //Echo session variables that were set on previous page
-        echo "Total is " . $_SESSION["total"] . ".";
+        echo "Name: " . $_SESSION["user_name"] . "<br>";
+        echo "Email: " . $_SESSION["user_email"] . "<br>";
+        echo "Total Price: " . $_SESSION["total"] . "<br>";
         ?>
     </body>
 </html>
