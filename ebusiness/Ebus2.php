@@ -1,3 +1,8 @@
+<?php
+// Start the session
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -7,7 +12,7 @@
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    <script type="text/javascript" src="ebus2_validator.js"></script>
     <link rel="stylesheet" href="../mystylesheet.css" type="text/css" />
 </head>
 
@@ -33,8 +38,15 @@
         <br>
         <br>
     </div>
-
-    <script type="text/javascript" src="ebus2_validator.js"></script>
     
-</body>
+    <?php
+    // Set session variables
+    $_SESSION["total"] = $_POST["total"];
+    ?>
+    
+<div class="nevim">assadd
+    </div>
+
+
+    </body>
 </html>
