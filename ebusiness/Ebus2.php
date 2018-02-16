@@ -22,13 +22,13 @@ session_start();
 
         <br>
 
-        <form method="POST" action="Ebus3.php" class="ebus">
+        <form action="Ebus3.php" method="post" class="ebus">
 
             <label for="user_name">Name:</label>
-            <input type="text" id="user_name" class="ebus2input">
+            <input type="text" name="user_name" id="user_name" class="ebus2input">
         <br><br>
             <label for="user_email">Email:</label>
-            <input type="text" id="user_email" class="ebus2input">
+            <input type="text" name="user_email" id="user_email" class="ebus2input">
         <br><br>
             <label for="user_pin">PIN:</label>
             <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4" class="ebus2input">

@@ -18,19 +18,67 @@
 
         <br/>
 
-        <form method="POST" action="Ebus2.php" class="ebus">
-            <label for="salesforce">
-                <input type="radio" id="salesforce" name="product" checked onClick="disabledtnProceed()"/>
-                SalesForce @ $100
-            </label>
+        <form action="Ebus2.php" method="post" class="ebus">
+            <table>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                </tr>
 
-        <br/>
+                <tr>
+                    <td>
+                        <label for="salesforce">
+                        <input type="radio" id="salesforce" name="product" checked onClick="disabledtnProceed()"/>
+                        SalesForce
+                        </label>
+                    </td>
+                    <td>
+                        $100
+                    </td>
+                </tr>
 
-            <label for="aws">
-                <input type="radio" id="aws" name="product" onClick="disabledtnProceed()"/>
-                AWS @ $300
-            </label>
+            <br/>
 
+                <tr>
+                    <td>
+                        <label for="cloud9">
+                        <input type="radio" id="cloud9" name="product" checked onClick="disabledtnProceed()"/>
+                        Cloud 9
+                        </label>
+                    </td>
+                    <td>
+                        $200
+                    </td>
+                </tr>
+
+            <br/>
+
+                <tr>
+                    <td>
+                        <label for="aws">
+                        <input type="radio" id="aws" name="product" checked onClick="disabledtnProceed()"/>
+                        Amazon Web Services
+                        </label>
+                    </td>
+                    <td>
+                        $300
+                    </td>
+                </tr>  
+
+            <br/>
+
+                 <tr>
+                    <td>
+                        <label for="gmail">
+                        <input type="radio" id="gmail" name="product" checked onClick="disabledtnProceed()"/>
+                        Gmail
+                        </label>
+                    </td>
+                    <td>
+                        $400
+                    </td>
+                </tr>
+            </table>
         <br/>
         <br/>
 
@@ -58,6 +106,7 @@
         <button onClick="calcSub()" class="button1">Calculate Cost</button>
         <a role="button" href="Ebus1.php" class="button3">Clear Choice</a> <!-- link to the same page to manually refresh it and clear user's selection -->
     </div>
+    
     <br/>
     <br/>  
     </div>
