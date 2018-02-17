@@ -13,25 +13,25 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  overflow: hidden;
+  /* overflow: hidden; */
   color: white;
   text-shadow: 1px 1px 8px #000000;
 }
 .footer {
   padding: 0.5em;
-  font-size: 16px;
+  font-size: 13px;
   color: rgba(255, 255, 255, 0.7);
   background-color: rgba(0, 0, 0, 0.3);
   clear: left;
   text-align: center;
   margin: 0px;
-  position: absolute;
+  position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 1;
 }
 
-/* TADY ZACINA STARY KOD */
 .container {
   min-width: 100%;
   margin: auto;
@@ -51,22 +51,42 @@ body {
   font-size: 50px;
   text-shadow: 2px 2px 5px rgb(90, 0, 117);
   line-height: 50%;
-  padding: 20px;
+  padding: 10px 0px 20px 0px;
 }
 .content {
   max-width: 50%;
   margin: auto;
 }
-.mainheadingCV {
-  text-align: center;
-  color: white;
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
-  background: linear-gradient(145deg, #0fb8ad 1%, #1fc8db 52%, #2cb5e8 76%);
+.interests {
+  margin: auto;
+  border-collapse: collapse;
+  min-width: 80%;
+  text-align: left;
 }
-th {
-  width: 40%;
+.interests th,
+td {
+  padding: 10px 10px 10px 20px;
 }
-
+.interests th {
+  background: rgba(0, 0, 0, 0.5);
+}
+.interests td {
+  background: rgba(255, 255, 255, 0.04);
+}
+.interests tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.link {
+  text-decoration: none;
+  color: rgb(203, 2, 230);
+}
+.link:hover {
+  text-decoration: underline rgb(119, 0, 255);
+  background: rgba(0, 0, 0, 0.4);
+}
+.clouds {
+  text-align: justify;
+}
 /* ---------- LOGO STYLING ---------- */
 .logo {
   margin: 0 0 0 7%;
@@ -76,8 +96,17 @@ th {
   font-size: 37px;
   opacity: 0.75;
   position: relative;
+  top: 0px;
+  color: white;
+  text-decoration: none;
+}
+.logo a,
+.logo a:hover {
+  text-decoration: none;
+  color: white;
 }
 .logo:hover {
+  color: white;
   -webkit-animation: mouse 1.3s; /* Chrome, Safari, Opera */
   animation: mouse 1.3s;
   animation-fill-mode: forwards;
@@ -139,6 +168,8 @@ th {
   -webkit-animation: item 1.5s; /* Chrome, Safari, Opera */
   animation: item 1.5s;
   animation-fill-mode: forwards;
+  text-decoration: none;
+  color: white;
 }
 .active {
   background-color: rgba(0, 0, 0, 0.4);
@@ -187,7 +218,89 @@ th {
 }
 /* END OF NAVIGATION BAR */
 
+/* ---------- CV PART BOOTSTRAP ---------- */
+.bootstrap {
+  font-family: "Jura", sans-serif;
+  /* margin: auto; */
+}
+.cardboot {
+  text-shadow: 0px 0px;
+  /* background: rgba(255, 255, 255, 0.103); */
+  /* font-size: 18px; */
+  min-height: fit-content;
+}
+.cardboot a,
+.cardboot a:hover {
+  color: rgb(123, 0, 139);
+}
+.mainheadingCV {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(145deg, #a75fa7 1%, #6904c2 52%, #39409c 76%);
+}
+/* END OF CV PART */
+
 /* ---------- BUTTONS ---------- */
+.next {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 12px 30px;
+}
+.next:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 12px 30px;
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.24), 0 5px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.add {
+  color: white;
+  text-decoration: none;
+  padding: 12px 30px;
+  width: 30%;
+  background: linear-gradient(145deg, #a75fa7 1%, #6904c2 52%, #39409c 76%);
+}
+.add:hover {
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.24), 0 5px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.validate {
+  color: rgb(255, 255, 255);
+  margin-right: 30px;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 12px 30px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(0, 0, 0, 0.3);
+}
+.validate:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.24), 0 5px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.clear {
+  color: rgb(255, 255, 255);
+  margin-right: 30px;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 12px 30px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(0, 0, 0, 0.3);
+}
+.clear:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0);
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.24), 0 5px 20px 0 rgba(0, 0, 0, 0.19);
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(0, 0, 0, 0.8);
+}
+
 .button1 {
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -261,27 +374,87 @@ th {
 }
 /* END OF BUTTONS */
 
-/* EBUSINESS */
+/* ---------- EBUSINESS ---------- */
 .ebus {
   margin-left: 20px;
   margin-right: 20px;
 }
+
+/* Radio */
+.radio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Hides the browser's default radio button */
+.radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+/* Create a custom radio button */
+.check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+}
+/* On mouse-over, add a grey background color */
+.radio:hover input ~ .check {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+/* When the radio button is checked, add a blue background */
+.radio input:checked ~ .check {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Show the indicator (dot/circle) when checked */
+.raio input:checked ~ .check:after {
+  display: block;
+}
+/* Style the indicator (dot/circle) */
+.radio .check:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgb(186, 0, 243);
+}
+/* End of radio */
+
 .ebus2input {
-  width: 100%;
+  color: white;
+  width: 50%;
   outline: none;
   padding: 8px 12px;
   margin: 4px 0px;
   box-sizing: border-box;
-  border-bottom: 2px solid rgb(103, 197, 252);
-  background-color: rgb(243, 243, 243);
-  border-radius: 5px;
+  border-bottom: 2px solid rgb(198, 0, 238);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0px;
   resize: none;
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
 }
 .ebus2input:focus {
-  border-bottom: 2px solid rgb(2, 141, 221);
-  background-color: rgb(236, 236, 236);
+  border-bottom: 2px solid rgb(154, 1, 192);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 /* END OF EBUSINESS */

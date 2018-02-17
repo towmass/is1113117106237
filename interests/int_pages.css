@@ -1,55 +1,62 @@
 body {
-    background-color: rgb(37, 37, 37);
-    font-family: sans-serif;
-  }
-.textopacity { 
-    background: rgba(0,0,0,0.6);
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 17px;
-    padding-bottom: 17px;
-    border-radius: 10px;
+  background-color: rgb(37, 37, 37);
+  font-family: sans-serif;
+}
+.textopacity {
+  background: rgba(0, 0, 0, 0.6);
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-radius: 10px;
 }
 
 #section1 {
-    /* background-image: url("http://eskipaper.com/images/manhattan-background-1.jpg"); */
-    background-image: url("newyork.jpg");
-    background-size: cover;
-    background-color: rgba(100, 69, 2, 0.685);
-    font-size: 3em;
+  /* background-image: url("http://eskipaper.com/images/manhattan-background-1.jpg"); */
+  background-image: url("newyork.jpg");
+  background-size: cover;
+  background-color: rgba(100, 69, 2, 0.685);
+  font-size: 3em;
 }
 
 #section2 {
-    /* background-image: url("https://wallup.net/wp-content/uploads/2016/04/06/343611-Japan-Mount_Fuji-building-nature-Asian_architecture-trees.jpg"); */
-    background-image: url("japan.jpg");    
-    background-size: cover;
-    background-color: rgb(165, 5, 5);
-    font-size: 3em;
+  /* background-image: url("https://wallup.net/wp-content/uploads/2016/04/06/343611-Japan-Mount_Fuji-building-nature-Asian_architecture-trees.jpg"); */
+  background-image: url("japan.jpg");
+  background-size: cover;
+  background-color: rgb(165, 5, 5);
+  font-size: 3em;
 }
 
 #section3 {
-    /* background-image: url("https://www.ostrava.cz/cs/o-meste/prezentace/newsletter/ostravska-radnice-11-2015/vtz.jpg"); */
-    background-image: url("ostrava.jpg");    
-    background-size: cover;
-    background-color: rgb(4, 68, 100);
-    font-size: 3em;
+  /* background-image: url("https://www.ostrava.cz/cs/o-meste/prezentace/newsletter/ostravska-radnice-11-2015/vtz.jpg"); */
+  background-image: url("ostrava.jpg");
+  background-size: cover;
+  background-color: rgb(4, 68, 100);
+  font-size: 3em;
 }
 /* https://upload.wikimedia.org/wikipedia/commons/7/70/Ostrava%2C_Poruba%2C_kruhov%C3%BD_objezd_v_centru_Poruby.jpg */
 
 .section {
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
 }
 
-.home {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    padding: 17px 70px 17px 70px;
-    background: rgba(255, 196, 3, 0.6);
-    border-radius: 10px;
+.homebtn {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding: 17px 70px 17px 70px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
 }
-.home:hover {
-    background: rgba(255, 196, 3, 0.8);
-    box-shadow: 0 10px 14px 0 rgba(0,0,0,0.24), 0 15px 45px 0 rgba(0,0,0,0.19);
+.homebtn:hover {
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.24),
+    0 15px 45px 0 rgba(0, 0, 0, 0.19);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(255, 251, 0, 0.705);
 }
