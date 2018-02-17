@@ -42,7 +42,7 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="active" href="ebusiness/Ebus1.php">E-Business</a>
+        <a class="active" href="Ebus1.php">E-Business</a>
       </li>
       <li class="nav-item dropdown">
         <a href="javascript:void(0)" class="dropbutton">Github</a>
@@ -59,7 +59,7 @@
   <!-- End of navigation -->
 
   <div class="container">
-    <h1 class="heading">Select a Product</h1>
+    <h2 class="heading">Select a Product</h2>
     <div class="content">
         <form action="Ebus2.php" method="post">
             <table class="interests">
@@ -117,39 +117,31 @@
                 </tr>
 
                 <tr>
-                    <td>
-                    </td>
-                    <td>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
+                    <th>Sub Total</th>
+                    <th>
                         <label for="subtotal">
-                        Sub Total
-                        <input type="text" id="subtotal" value="0.00" readonly/>
+                        <input type="text" id="subtotal" class="ebus1input" value="0.00" readonly/>
                         </label>
-                    </td>
+                    </th>
                 </tr>
-
                 <tr>
-                    <td>
+                    <th>Total</th>
+                    <th>
                         <label for="total">
-                        Total
-                        <input type="hidden" id="total" name="total" value="0.00" readonly/>
+                        <input type="hidden" id="total" class="ebus1input" name="total" value="0.00" readonly/>
                         </label>
-                    </td>
+                    </th>
                 </tr>
             </table>
 
         <br/>
 
-            <button type="submit" class="button2" id="btnProceed" disabled>Add to Shopping Cart</button>
+            <button type="submit" class="add" id="btnProceed" disabled>Add to Shopping Cart</button>
         </form>
 
         <br/>
         <br/>
-        <button onClick="calcSub()" class="validate">Calculate Cost</button>
+        <a href="" onClick="calcSub()" class="validate">Calculate Cost</a>
         <a role="button" href="Ebus1.php" class="clear">Clear Choice</a> <!-- link to the same page to manually refresh it and clear user's selection -->
     </div>  
     </div>

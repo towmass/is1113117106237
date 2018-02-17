@@ -61,6 +61,86 @@
     <div class="content">
       <p>Welcome to the IS1113 Course Final Project web application!</p>
       <p>For accessing more detailed sections, please select one of the items in the dropdown navigation bar above.</p>
+
+      <form action="Ebus2.php" method="post">
+        <table class="interests">
+          <tr>
+            <th>Product Name:</th>
+            <th>Price:</th>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="salesforce" class="radio">SalesForce
+                <input type="radio" id="salesforce" name="product" checked onClick="disabledtnProceed()" />
+                <span class="check"></span>
+              </label>
+            </td>
+            <td>
+              $100
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="cloud9" class="radio">Cloud 9
+                <input type="radio" id="cloud9" name="product" checked onClick="disabledtnProceed()" />
+                <span class="check"></span>
+              </label>
+            </td>
+            <td>
+              $200
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="aws" class="radio">Amazon Web Services
+                <input type="radio" id="aws" name="product" checked onClick="disabledtnProceed()" />
+                <span class="check"></span>
+              </label>
+            </td>
+            <td>
+              $300
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="gmail" class="radio">Gmail
+                <input type="radio" id="gmail" name="product" checked onClick="disabledtnProceed()" />
+                <span class="check"></span>
+              </label>
+            </td>
+            <td>
+              $400
+            </td>
+          </tr>
+
+          <tr>
+            <th>ToSSStal</th>
+            <th>
+              <label for="subtotal">
+                <input type="text" id="subtotal" class="ebus1input" value="0.00" readonly/>
+              </label>
+            </th>
+          </tr>
+          <tr>
+            <th>Total</th>
+            <th>
+              <label for="total">
+                <input type="hidden" id="total" class="ebus1input" name="total" value="0.00" readonly/>
+              </label>
+            </th>
+          </tr>
+        </table>
+
+        <br/>
+
+        <a href="" type="submit" class="add" id="btnProceed" disabled>Add to Shopping Cart</a>
+      </form>
+
+
     </div>
   </div>
 

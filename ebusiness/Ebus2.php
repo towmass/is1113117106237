@@ -47,7 +47,7 @@ session_start();
         </div>
       </li>
       <li class="nav-item">
-        <a class="active" href="ebusiness/Ebus1.php">E-Business</a>
+        <a class="active" href="Ebus1.php">E-Business</a>
       </li>
       <li class="nav-item dropdown">
         <a href="javascript:void(0)" class="dropbutton">Github</a>
@@ -80,11 +80,11 @@ session_start();
             <label for="user_pin">PIN:</label>
             <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4" class="ebus2input">
         <br/><br/>
-            <button type="submit" id="btnPurchase" class="add" disabled>Proceed with Purchase</button>
+            <a href="" type="submit" id="btnPurchase" class="add" disabled>Proceed with Purchase</a>
         
         </form>
         <br/><br/>
-            <button onClick="validateDetails()" class="validate">Validate</button>
+            <a href="" onClick="validateDetails()" class="validate">Validate</a>
         </div>
     </div>
 

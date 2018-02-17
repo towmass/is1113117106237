@@ -48,7 +48,7 @@ body {
 }
 .heading {
   color: white;
-  font-size: 50px;
+  font-size: 40px;
   text-shadow: 2px 2px 5px rgb(90, 0, 117);
   line-height: 50%;
   padding: 10px 0px 20px 0px;
@@ -261,6 +261,7 @@ td {
   padding: 12px 30px;
   width: 30%;
   background: linear-gradient(145deg, #a75fa7 1%, #6904c2 52%, #39409c 76%);
+  border: 0px;
 }
 .add:hover {
   box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.24), 0 5px 20px 0 rgba(0, 0, 0, 0.19);
@@ -269,27 +270,32 @@ td {
   color: rgb(255, 255, 255);
   margin-right: 30px;
   text-decoration: none;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.6);
   padding: 12px 30px;
   border-style: solid;
-  border-width: 2px;
-  border-color: rgba(0, 0, 0, 0.3);
+  border-width: 1px;
+  border-color: rgba(196, 3, 255, 0.9);
+}
+.buttonx {
+  opacity: 0;
+  visibility: hidden;
 }
 .validate:hover {
   color: rgb(255, 255, 255);
   text-decoration: none;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.24), 0 5px 20px 0 rgba(0, 0, 0, 0.19);
+  border-color: rgb(140, 0, 255);
 }
 .clear {
   color: rgb(255, 255, 255);
   margin-right: 30px;
   text-decoration: none;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0);
   padding: 12px 30px;
   border-style: solid;
-  border-width: 2px;
-  border-color: rgba(0, 0, 0, 0.3);
+  border-width: 1px;
+  border-color: rgba(196, 3, 255, 0.9);
 }
 .clear:hover {
   color: rgb(255, 255, 255);
@@ -297,97 +303,17 @@ td {
   background: rgba(0, 0, 0, 0);
   box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.24), 0 5px 20px 0 rgba(0, 0, 0, 0.19);
   border-style: solid;
-  border-width: 2px;
-  border-color: rgba(0, 0, 0, 0.8);
-}
-
-.button1 {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  background: linear-gradient(rgb(60, 219, 28), rgb(5, 173, 5));
-  border: 4px rgb(70, 146, 72);
-  border-radius: 5px;
-  padding: 15px;
-}
-.button1:hover {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  background: linear-gradient(0deg, rgb(7, 173, 35), rgb(2, 134, 9));
-  border: 10px rgb(43, 92, 44);
-  border-radius: 5px;
-  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.24), 0 5px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 15px;
-}
-
-.button2 {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  background: linear-gradient(rgb(30, 182, 253), rgb(20, 125, 245));
-  border: 4px rgb(70, 146, 72);
-  border-radius: 5px;
-  padding: 15px;
-}
-.button2:hover {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  background: linear-gradient(0deg, rgb(3, 143, 207), rgb(14, 94, 185));
-  border: 10px rgb(43, 92, 44);
-  border-radius: 5px;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.24), 0 7px 30px 0 rgba(0, 0, 0, 0.19);
-  padding: 15px;
-}
-
-.button3 {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  background: linear-gradient(rgb(241, 50, 50), rgb(199, 5, 5));
-  border: 4px rgb(160, 28, 28);
-  border-radius: 5px;
-  padding: 15px;
-}
-.button3:hover {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  background: linear-gradient(0deg, rgb(223, 32, 32), rgb(184, 0, 0));
-  border: 10px rgb(180, 17, 17);
-  border-radius: 5px;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.24), 0 7px 30px 0 rgba(0, 0, 0, 0.19);
-  padding: 15px;
-}
-
-.button4 {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  background: linear-gradient(rgb(138, 39, 219), rgb(91, 2, 173));
-  border: 4px rgb(160, 28, 28);
-  border-radius: 5px;
-  padding: 15px;
-}
-.button4:hover {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  background: linear-gradient(0deg, rgb(90, 8, 197), rgb(78, 2, 129));
-  border: 10px rgb(180, 17, 17);
-  border-radius: 5px;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.24), 0 7px 30px 0 rgba(0, 0, 0, 0.19);
-  padding: 15px;
+  border-width: 1px;
+  border-color: rgb(140, 0, 255);
 }
 /* END OF BUTTONS */
-
-/* ---------- EBUSINESS ---------- */
-.ebus {
-  margin-left: 20px;
-  margin-right: 20px;
-}
 
 /* Radio */
 .radio {
   display: block;
   position: relative;
   padding-left: 35px;
-  margin-bottom: 12px;
   cursor: pointer;
-  font-size: 22px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -411,11 +337,11 @@ td {
 }
 /* On mouse-over, add a grey background color */
 .radio:hover input ~ .check {
-  background-color: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.6);
 }
 /* When the radio button is checked, add a blue background */
 .radio input:checked ~ .check {
-  background-color: rgba(0, 0, 0, 0.7);
+  background: linear-gradient(145deg, #c41cc4 1%, #a80fd6 52%, #8200ce 76%);
 }
 /* Create the indicator (the dot/circle - hidden when not checked) */
 .check:after {
@@ -427,16 +353,27 @@ td {
 .raio input:checked ~ .check:after {
   display: block;
 }
-/* Style the indicator (dot/circle) */
-.radio .check:after {
-  top: 9px;
-  left: 9px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: rgb(186, 0, 243);
-}
 /* End of radio */
+
+.ebus1input {
+  color: white;
+  width: 100%;
+  outline: none;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgb(198, 0, 238);
+  border-top: 1px solid rgb(198, 0, 238);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0px;
+  resize: none;
+  border-left: 0px;
+  border-right: 0px;
+  font-size: 16px;
+}
+.ebus1input:focus {
+  border-bottom: 1px solid rgb(154, 1, 192);
+  background-color: rgba(0, 0, 0, 0.6);
+}
 
 .ebus2input {
   color: white;
@@ -445,16 +382,17 @@ td {
   padding: 8px 12px;
   margin: 4px 0px;
   box-sizing: border-box;
-  border-bottom: 2px solid rgb(198, 0, 238);
+  border-bottom: 1px solid rgb(198, 0, 238);
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 0px;
   resize: none;
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
+  font-size: 16px;
 }
 .ebus2input:focus {
-  border-bottom: 2px solid rgb(154, 1, 192);
+  border-bottom: 1px solid rgb(154, 1, 192);
   background-color: rgba(0, 0, 0, 0.6);
 }
 /* END OF EBUSINESS */

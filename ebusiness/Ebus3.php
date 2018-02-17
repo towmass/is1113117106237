@@ -41,7 +41,7 @@ session_start();
         </div>
       </li>
       <li class="nav-item">
-        <a class="active" href="ebusiness/Ebus1.php">E-Business</a>
+        <a class="active" href="Ebus1.php">E-Business</a>
       </li>
       <li class="nav-item dropdown">
         <a href="javascript:void(0)" class="dropbutton">Github</a>
@@ -64,12 +64,12 @@ session_start();
         <table class="interests">
 
         <tr>
-            <td>Name:</td>
-            <td>
+            <th>Name:</th>
+            <th>
                 <?php
                 //Echo variables that were included into previous form
                 echo $_POST["user_name"]; ?>
-            </td>
+            </th>
         </tr>
         <tr>
             <td>Email:</td>
