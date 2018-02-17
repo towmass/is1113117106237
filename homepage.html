@@ -4,29 +4,65 @@
 <head>
   <title>117106237</title>
   <link rel="stylesheet" href="mystylesheet.css" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text" rel="stylesheet">
 </head>
 
 <body>
-  <div class="content">
-    <h1 class="mainheading">117106237 - IS1113 Project</h1>
-    <div class="homepage">
-      <p class="card-text">For accessing my CV, Interests etc., please click the buttons below.</p>
-      <br/>
-      <a href="cv/cv_page1.html" class="button1">Curriculum Vitae</a>
-      <a href="interests/sports.html" class="button2">Interests</a>
-      <a href="ebusiness/Ebus1.php" class="button3">E-Business</a>
-      <a href="https://github.com/towmass/is1113117106237" class="button4">GitHub</a>
-      <br/>
-      <br/>
-      <br/>
-      <a href="https://github.com/towmass/is1113117106237/graphs/commit-activity" class="button3">GitHub Commits</a>
-      <a href="https://is1113117106237.herokuapp.com" class="button1">Heroku</a>
+
+  <!-- Navigation bar -->
+  <ul class="nav-bar">
+    <div class="logo">TM creative.</div>
     </div>
-    <br/>
-    <div class="footing">
-      <hr> &copy; 2018 Tomas Mandok
+    <div class="nav-margin">
+      <li class="nav-item">
+        <a class="active" href="homepage.html">Home</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="javascript:void(0)" class="dropbutton">Curriculum Vitae</a>
+        <div class="dropdown-content">
+          <a href="cv/cv_page1.html">Personal Details</a>
+          <a href="cv/cv_page2.html">Education</a>
+          <a href="cv/cv_page3.html">Work Experience</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="javascript:void(0)" class="dropbutton">Interests</a>
+        <div class="dropdown-content">
+          <a href="interests/sports.html">Sports</a>
+          <a href="interests/travel.html">Travel</a>
+          <a href="interests/cloudservices.html">Cloud Services</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a href="#about">E-Business</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="javascript:void(0)" class="dropbutton">Github</a>
+        <div class="dropdown-content">
+          <a href="https://github.com/towmass/is1113117106237">Repository</a>
+          <a href="https://github.com/towmass/is1113117106237/graphs/commit-activity">Commits</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a href="https://is1113117106237.herokuapp.com">Heroku App</a>
+      </li>
+    </div>
+  </ul>
+  <!-- End of navigation -->
+
+  <div class="container">
+    <h1 class="mainheading">117106237 IS1113 Project</h1>
+    <div class="content">
+      <p>Welcome to the IS1113 Course Final Project web application!</p>
+      <p>For accessing more detailed sections, please select one of the items in the dropdown navigation bar above.</p>
     </div>
   </div>
+
+  <div class="footer">
+    &copy; 2018 Tomas Mandok
+  </div>
+
 </body>
 
 </html>
@@ -35,4 +71,4 @@
 git add .
 git commit -am "commit comment text"
 git push
--just a note for later use, not concerning me bc of VSC-->
+-just a note for later use, not concerning me bc of VSC -->
