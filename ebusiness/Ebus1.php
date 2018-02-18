@@ -18,14 +18,14 @@
 <body>
     <!-- Navigation bar -->
   <ul class="nav-bar">
-    <div class="logo">
-      <a href="../homepage.html">TM Creative.</a>
-    </div>
+    <a class="logo" href="../homepage.html">
+      TM Creative.
+    </a>    
     <div class="nav-margin">
       <li class="nav-item">
         <a href="../homepage.html">Home</a>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item nav-dropdown">
         <a href="javascript:void(0)" class="dropbutton">Curriculum Vitae</a>
         <div class="dropdown-content">
           <a href="../cv/cv_page1.html">Personal Details</a>
@@ -33,7 +33,7 @@
           <a href="../cv/cv_page3.html">Work Experience</a>
         </div>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item nav-dropdown">
         <a href="javascript:void(0)" class="dropbutton">Interests</a>
         <div class="dropdown-content">
           <a href="../interests/sports.html">Sports</a>
@@ -44,7 +44,7 @@
       <li class="nav-item">
         <a class="active" href="Ebus1.php">E-Business</a>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item nav-dropdown">
         <a href="javascript:void(0)" class="dropbutton">Github</a>
         <div class="dropdown-content">
           <a href="https://github.com/towmass/is1113117106237">Repository</a>
@@ -62,7 +62,7 @@
     <h2 class="pheading">Select a Product</h2>
     <div class="content">
         <form action="Ebus2.php" method="post">
-            <table class="interests ebus1text">
+            <table class="interests">
                 <tr>
                     <th>Product Name:</th>
                     <th>Price:</th>
