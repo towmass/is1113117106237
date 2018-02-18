@@ -62,7 +62,7 @@
     <h2 class="pheading">Select a Product</h2>
     <div class="content">
         <form action="Ebus2.php" method="post">
-            <table class="interests">
+            <table class="interests ebus1text">
                 <tr>
                     <th>Product Name:</th>
                     <th>Price:</th>
@@ -158,6 +158,9 @@
         <br/>
         <button type="button" onClick="calcSub()" class="validate">Calculate Cost</button>
         <button type="button" onClick="location.href='Ebus1.php'" class="clear">Clear Choice</button> <!-- link to the same page to manually refresh it and clear user's selection -->
+    
+        <br/>
+        <br/>
     </div>  
     </div>
 

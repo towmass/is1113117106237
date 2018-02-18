@@ -12,8 +12,9 @@ function validateDetails() {
     alert("Please enter your details.");
   } else if (String(pin).length < 4) {
     alert("Please make sure your PIN is accurate");
-  } else {
+  } else if (noemail !== "") {
     validateEmail();
+  } else {
     enablebtnPurchase();
   } //end of conditions
 } // end of function validateDetails
