@@ -105,7 +105,7 @@ session_start();
         </tr>
       </table>
       <br/>
-      <p>Thank you for your purchase!</p>
+      <p class="receipt">Thank you for your purchase!</p>
     </div>
     </div>
 

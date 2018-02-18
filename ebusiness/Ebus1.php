@@ -156,7 +156,7 @@
         </form>
 
         <br/>
-        <button type="button" onClick="calcSub()" class="validate">Calculate Cost</button>
+        <button type="button" onClick="calcSub()" class="validate">Calculate Cost</button> &nbsp;&nbsp;&nbsp;
         <button type="button" onClick="location.href='Ebus1.php'" class="clear">Clear Choice</button> <!-- link to the same page to manually refresh it and clear user's selection -->
     
         <br/>

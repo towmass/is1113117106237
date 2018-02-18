@@ -93,7 +93,7 @@ session_start();
         <br/>
             <button type="submit" id="btnPurchase" class="add" disabled>Proceed with Purchase</button>
         </form>
-        <br/><br/>
+        <br/>
             <button type="button" onClick="validateDetails()" class="validate">Validate</button>
         </div>
     </div>

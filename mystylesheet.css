@@ -316,7 +316,7 @@ td {
 }
 .validate {
   color: rgb(255, 255, 255);
-  margin-right: 60px;
+  margin: 0px;
   text-decoration: none;
   background: rgba(0, 0, 0, 0.6);
   padding: 15px 30px;
@@ -470,5 +470,8 @@ input[value] {
 }
 .ebus2input:focus {
   border-bottom: 1px solid rgb(255, 255, 255);
+}
+.receipt {
+  text-align: center;
 }
 /* END OF EBUSINESS */
