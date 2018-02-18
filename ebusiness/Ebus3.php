@@ -62,13 +62,29 @@ session_start();
         <div class="content">
 
         <table class="interests">
-
+        
+        <tr>
+            <th>Date:</th>
+            <th>
+                <?php
+                //Echo date of purchase
+                echo date("Y/m/d"); ?>
+            </th>
+        </tr>
         <tr>
             <th>Name:</th>
             <th>
                 <?php
                 //Echo variables that were included into previous form
                 echo $_POST["user_name"]; ?>
+            </th>
+        </tr>
+        <tr>
+            <th>Address:</th>
+            <th>
+                <?php
+                //Echo variables that were included into previous form
+                echo $_POST["user_address"]; ?>
             </th>
         </tr>
         <tr>
@@ -88,6 +104,8 @@ session_start();
           </th>
         </tr>
       </table>
+      <br/>
+      <p>Thank you for your purchase!</p>
     </div>
     </div>
 

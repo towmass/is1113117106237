@@ -119,31 +119,31 @@
                 <tr>
                     <th>Sub Total</th>
                     <th>
-                        <label for="subtotal">
-                        <input type="text" id="subtotal" class="ebus1input" value="0.00" readonly/>
+                        <label for="subtotal" class="currency">$
+                        <input type="text" id="subtotal" name="subtotal" class="ebus1input" value="0.00" readonly/>
                         </label>
                     </th>
                 </tr>
                 <tr>
                     <th>Discount @ 5% <br/>(- Discount)</th>
                     <th>
-                        <label for="discount">
-                        <input type="text" id="discount" class="ebus1input" value="0.00" readonly/>
+                        <label for="discount" class="currency">$
+                        <input type="text" id="discount" name="discount" class="ebus1input" value="0.00" readonly/>
                         </label>
                     </th>
                 </tr>
                 <tr>
                     <th>VAT @ 10%</th>
                     <th>
-                        <label for="vat">
-                        <input type="text" id="vat" class="ebus1input" value="0.00" readonly/>
+                        <label for="vat" class="currency">$
+                        <input type="text" id="vat" name="vat" class="ebus1input" value="0.00" readonly/>
                         </label>
                     </th>
                 </tr>
                 <tr>
                     <th>Total <br/>(- Discount, + VAT)</th>
                     <th>
-                        <label for="total">
+                        <label for="total" class="currency">$
                         <input type="text" id="total" class="ebus1input" name="total" value="0.00" readonly/>
                         </label>
                     </th>
@@ -156,9 +156,8 @@
         </form>
 
         <br/>
-        <br/>
         <button type="button" onClick="calcSub()" class="validate">Calculate Cost</button>
-        <button type="button" onClick="location.href='Ebus1.php'" class="clear">Clear Choice</a> <!-- link to the same page to manually refresh it and clear user's selection -->
+        <button type="button" onClick="location.href='Ebus1.php'" class="clear">Clear Choice</button> <!-- link to the same page to manually refresh it and clear user's selection -->
     </div>  
     </div>
 

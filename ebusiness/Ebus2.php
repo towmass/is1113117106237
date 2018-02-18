@@ -75,11 +75,15 @@ session_start();
         
         <tr>
             <th><label for="user_name">Name:</label></th>
-            <th><input type="text" name="user_name" id="user_name" class="ebus2input"></th>
+            <th><input type="text" name="user_name" id="user_name" class="ebus2input" placeholder="John Wick"></th>
+        </tr>
+        <tr>
+            <th><label for="user_address">Address:</label></th>
+            <th><input type="text" name="user_address" id="user_address" class="ebus2input" placeholder="College Street, Cork City"></th>
         </tr>
         <tr>
             <th><label for="user_email">Email:</label></th>
-            <th><input type="text" name="user_email" id="user_email" class="ebus2input"></th>
+            <th><input type="email" name="user_email" id="user_email" class="ebus2input" placeholder="Baba.Yaga@gmail.com"></th>
         </tr>
         <tr>
             <th><label for="user_pin">PIN:</label></th>

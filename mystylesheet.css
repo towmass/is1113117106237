@@ -55,7 +55,7 @@ body {
 }
 .pheading {
   color: white;
-  font-size: 250px;
+  font-size: 30px;
   text-shadow: 2px 2px 5px rgb(90, 0, 117);
   line-height: 50%;
   padding: 10px 0px 10px 0px;
@@ -294,6 +294,7 @@ td {
   border-width: 1px;
   border-color: rgba(196, 3, 255, 0.9);
   font-size: 18px;
+  float: left;
 }
 .validate:hover {
   color: rgb(255, 255, 255);
@@ -312,6 +313,7 @@ td {
   border-width: 1px;
   border-color: rgba(196, 3, 255, 0.9);
   font-size: 18px;
+  float: right;
 }
 .clear:hover {
   color: rgb(255, 255, 255);
@@ -330,6 +332,25 @@ td {
 }
 /* END OF BUTTONS */
 
+/* Set fonts to inputs */
+.ebus2input[type="password"],
+.ebus2input[type="text"],
+.ebus2input[type="email"] {
+  font-family: "Jura";
+}
+/* Set placeholders */
+input::placeholder,
+::-webkit-input-placeholder,
+::-moz-placeholder {
+  font-family: "Jura";
+  color: rgba(255, 255, 255, 0.3);
+}
+input[value] {
+  font-family: "Jura";
+}
+.currency {
+  font-size: 18px;
+}
 /* Radio */
 .radio {
   display: block;
@@ -379,7 +400,7 @@ td {
 
 .ebus1input {
   color: white;
-  width: 100%;
+  width: 90%;
   outline: none;
   padding: 8px 12px;
   box-sizing: border-box;
@@ -390,7 +411,7 @@ td {
   resize: none;
   border-left: 0px;
   border-right: 0px;
-  font-size: 16px;
+  font-size: 18px;
 }
 .ebus1input:focus {
   border-bottom: 1px solid rgb(154, 1, 192);
@@ -399,22 +420,21 @@ td {
 
 .ebus2input {
   color: white;
-  width: 50%;
+  width: 100%;
   outline: none;
   padding: 8px 12px;
   margin: 4px 0px;
   box-sizing: border-box;
   border-bottom: 1px solid rgb(198, 0, 238);
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0);
   border-radius: 0px;
   resize: none;
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
-  font-size: 16px;
+  font-size: 18px;
 }
 .ebus2input:focus {
-  border-bottom: 1px solid rgb(154, 1, 192);
-  background-color: rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
 /* END OF EBUSINESS */
