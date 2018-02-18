@@ -14,7 +14,6 @@ function validateDetails() {
     alert("Please make sure your PIN is accurate");
   } else if (noemail !== "") {
     validateEmail();
-  } else {
     enablebtnPurchase();
   } //end of conditions
 } // end of function validateDetails
