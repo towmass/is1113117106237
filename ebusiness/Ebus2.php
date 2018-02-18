@@ -71,20 +71,26 @@ session_start();
 
         <form action="Ebus3.php" method="post">
 
-            <label for="user_name">Name:</label>
-            <input type="text" name="user_name" id="user_name" class="ebus2input">
-        <br/><br/>
-            <label for="user_email">Email:</label>
-            <input type="text" name="user_email" id="user_email" class="ebus2input">
-        <br/><br/>
-            <label for="user_pin">PIN:</label>
-            <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4" class="ebus2input">
-        <br/><br/>
-            <a href="" type="submit" id="btnPurchase" class="add" disabled>Proceed with Purchase</a>
+        <table class="interests">
         
+        <tr>
+            <th><label for="user_name">Name:</label></th>
+            <th><input type="text" name="user_name" id="user_name" class="ebus2input"></th>
+        </tr>
+        <tr>
+            <th><label for="user_email">Email:</label></th>
+            <th><input type="text" name="user_email" id="user_email" class="ebus2input"></th>
+        </tr>
+        <tr>
+            <th><label for="user_pin">PIN:</label></th>
+            <th><input type="password" id="user_pin" placeholder="Card PIN" maxlength="4" class="ebus2input"></th>
+        </tr>
+        </table>
+        <br/>
+            <button type="submit" id="btnPurchase" class="add" disabled>Proceed with Purchase</button>
         </form>
         <br/><br/>
-            <a href="" onClick="validateDetails()" class="validate">Validate</a>
+            <button type="button" onClick="validateDetails()" class="validate">Validate</button>
         </div>
     </div>
 

@@ -59,7 +59,7 @@
   <!-- End of navigation -->
 
   <div class="container">
-    <h2 class="heading">Select a Product</h2>
+    <h2 class="pheading">Select a Product</h2>
     <div class="content">
         <form action="Ebus2.php" method="post">
             <table class="interests">
@@ -125,10 +125,26 @@
                     </th>
                 </tr>
                 <tr>
-                    <th>Total</th>
+                    <th>Discount @ 5% <br/>(- Discount)</th>
+                    <th>
+                        <label for="discount">
+                        <input type="text" id="discount" class="ebus1input" value="0.00" readonly/>
+                        </label>
+                    </th>
+                </tr>
+                <tr>
+                    <th>VAT @ 10%</th>
+                    <th>
+                        <label for="vat">
+                        <input type="text" id="vat" class="ebus1input" value="0.00" readonly/>
+                        </label>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Total <br/>(- Discount, + VAT)</th>
                     <th>
                         <label for="total">
-                        <input type="hidden" id="total" class="ebus1input" name="total" value="0.00" readonly/>
+                        <input type="text" id="total" class="ebus1input" name="total" value="0.00" readonly/>
                         </label>
                     </th>
                 </tr>
@@ -141,8 +157,8 @@
 
         <br/>
         <br/>
-        <a href="" onClick="calcSub()" class="validate">Calculate Cost</a>
-        <a role="button" href="Ebus1.php" class="clear">Clear Choice</a> <!-- link to the same page to manually refresh it and clear user's selection -->
+        <button type="button" onClick="calcSub()" class="validate">Calculate Cost</button>
+        <button type="button" onClick="location.href='Ebus1.php'" class="clear">Clear Choice</a> <!-- link to the same page to manually refresh it and clear user's selection -->
     </div>  
     </div>
 

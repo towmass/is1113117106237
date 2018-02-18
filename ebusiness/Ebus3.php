@@ -72,20 +72,20 @@ session_start();
             </th>
         </tr>
         <tr>
-            <td>Email:</td>
-            <td>
+            <th>Email:</th>
+            <th>
                 <?php
                 //Echo variables that were included into previous form
                 echo $_POST["user_email"]; ?>
-            </td>
+            </th>
         </tr>
         <tr>
-          <td>Total Price:</td>
-          <td>
+          <th>Total Price:</th>
+          <th>
                 <?php
                 //Echo session variables that were set on previous page
                 echo $_SESSION["total"] . "$"; ?>
-          </td>
+          </th>
         </tr>
       </table>
     </div>
