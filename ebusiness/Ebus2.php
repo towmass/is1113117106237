@@ -46,8 +46,12 @@ session_start();
           <a href="../interests/cloudservices.html">Cloud Services</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="active" href="Ebus1.php">E-Business</a>
+      <li class="nav-item nav-dropdown">
+        <a href="javascript:void(0)" class="dropbutton">E-Business</a>
+        <div class="dropdown-content">
+          <a href="Ebus1.php">Make Purchase</a>
+          <a href="Ebus4.php">Last Purchase</a>
+        </div>
       </li>
       <li class="nav-item nav-dropdown">
         <a href="javascript:void(0)" class="dropbutton">Github</a>
@@ -107,6 +111,9 @@ session_start();
     <?php
     // Set session variables
     $_SESSION["total"] = $_POST["total"];
+    $_SESSION["user_name"] = $_POST["user_name"];
+    $_SESSION["user_address"] = $_POST["user_address"];
+    $_SESSION["user_email"] = $_POST["user_email"];
     ?>
 
     </body>

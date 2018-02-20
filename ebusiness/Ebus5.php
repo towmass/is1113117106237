@@ -13,9 +13,6 @@ session_start();
         <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text" rel="stylesheet">
         <!-- End of link fonts -->
 
-        <!-- Load random code generator JS file -->
-        <script type="text/javascript" src="ebus3_random.js"></script>
-
     </head>
 
 <body>
@@ -66,60 +63,10 @@ session_start();
     <!-- End of navigation -->
 
     <div class="container">
-        <h2 class="heading">Purchase Receipt</h2>
+        <h2 class="heading">Purchase Deleted</h2>
         <div class="content">
-
-        <table class="interests">
-
-        <tr>
-            <th>Receipt Code</th>
-            <th id="randomCode" class="strong" name="code">
-              <script>randomCodeGenerator();</script>
-            </th>
-        </tr>
-        <tr>
-            <th>Date:</th>
-            <th name="date">
-                <?php
-                //Echo date of purchase
-                echo date("Y/m/d"); ?>
-            </th>
-        </tr>
-        <tr>
-            <th>Name:</th>
-            <th>
-                <?php
-                //Echo variables that were included into previous form
-                echo $_POST["user_name"]; ?>
-            </th>
-        </tr>
-        <tr>
-            <th>Address:</th>
-            <th>
-                <?php
-                //Echo variables that were included into previous form
-                echo $_POST["user_address"]; ?>
-            </th>
-        </tr>
-        <tr>
-            <th>Email:</th>
-            <th>
-                <?php
-                //Echo variables that were included into previous form
-                echo $_POST["user_email"]; ?>
-            </th>
-        </tr>
-        <tr>
-          <th>Total Price:</th>
-          <th>
-                <?php
-                //Echo session variables that were set on previous page
-                echo $_SESSION["total"] . "$"; ?>
-          </th>
-        </tr>
-      </table>
       <br/>
-      <p class="receipt">Thank you for your purchase!</p>
+      <p class="receipt">Your last purchase has been deleted.</p>
     </div>
     </div>
 
@@ -130,9 +77,7 @@ session_start();
         <!-- End of footer -->
 
         <?php
-          // Set session variables
-          $_SESSION["date"] = $_POST["date"];
-          $_SESSION["code"] = $_POST["code"];
+          session_destroy();
         ?>
 
     </body>

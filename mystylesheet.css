@@ -67,7 +67,8 @@ p {
   font-size: 22px;
 }
 .strong {
-  color: rgb(230, 0, 230);
+  color: rgb(255, 0, 255);
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 .content {
   max-width: 50%;

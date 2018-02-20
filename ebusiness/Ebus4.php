@@ -65,48 +65,57 @@ session_start();
  </ul>
     <!-- End of navigation -->
 
+    <script>noPurchaseMade();</script>
+
     <div class="container">
-        <h2 class="heading">Purchase Receipt</h2>
+        <h2 class="heading">Last Purchase</h2>
         <div class="content">
 
         <table class="interests">
 
         <tr>
             <th>Receipt Code</th>
-            <th id="randomCode" class="strong" name="code">
-              <script>randomCodeGenerator();</script>
+            <th id="codeReceipt">
+                <?php
+                //Echo session variable
+                echo $_SESSION["code"];
+                ?>
             </th>
         </tr>
         <tr>
             <th>Date:</th>
-            <th name="date">
+            <th>
                 <?php
-                //Echo date of purchase
-                echo date("Y/m/d"); ?>
+                //Echo session variable
+                echo $_SESSION["date"];
+                ?>
             </th>
         </tr>
         <tr>
             <th>Name:</th>
             <th>
                 <?php
-                //Echo variables that were included into previous form
-                echo $_POST["user_name"]; ?>
+                //Echo session variable
+                echo $_SESSION["user_name"];
+                ?>
             </th>
         </tr>
         <tr>
             <th>Address:</th>
             <th>
                 <?php
-                //Echo variables that were included into previous form
-                echo $_POST["user_address"]; ?>
+                //Echo session variable
+                echo $_SESSION["user_address"];
+                ?>
             </th>
         </tr>
         <tr>
             <th>Email:</th>
             <th>
                 <?php
-                //Echo variables that were included into previous form
-                echo $_POST["user_email"]; ?>
+                //Echo session variable
+                echo $_SESSION["user_email"];
+                ?>
             </th>
         </tr>
         <tr>
@@ -114,12 +123,15 @@ session_start();
           <th>
                 <?php
                 //Echo session variables that were set on previous page
-                echo $_SESSION["total"] . "$"; ?>
+                echo $_SESSION["total"] . "$";
+                ?>
           </th>
         </tr>
       </table>
       <br/>
-      <p class="receipt">Thank you for your purchase!</p>
+      <p class="receipt" id="instruction">If you wish to delete your last purchase, please click the button below.</p>
+      <br/>
+      <button class="add" onclick="location.href='Ebus5.php';" id="deleteButton">Delete Last Purchase</button>
     </div>
     </div>
 

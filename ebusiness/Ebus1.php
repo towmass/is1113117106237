@@ -41,8 +41,12 @@
           <a href="../interests/cloudservices.html">Cloud Services</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="active" href="Ebus1.php">E-Business</a>
+      <li class="nav-item nav-dropdown">
+        <a href="javascript:void(0)" class="dropbutton">E-Business</a>
+        <div class="dropdown-content">
+          <a href="Ebus1.php">Make Purchase</a>
+          <a href="Ebus4.php">Last Purchase</a>
+        </div>
       </li>
       <li class="nav-item nav-dropdown">
         <a href="javascript:void(0)" class="dropbutton">Github</a>
