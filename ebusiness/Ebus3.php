@@ -77,7 +77,8 @@ session_start();
             <th>Receipt Code</th>
             <th id="randomCode" class="strong" name="code"></th>
               <?php
-                $rand = substr(md5(microtime()),rand(0,9),6);
+                $rand = intval( "0" . rand(0,9) . rand(0,9) . rand(0,9) . rand(0,9) . rand(0,9) . rand(0,9) );
+                echo $rand;
               ?>
         </tr>
         <tr>
