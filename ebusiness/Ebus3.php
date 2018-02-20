@@ -134,11 +134,11 @@ session_start();
           $_SESSION["user_address"] = $_POST["user_address"];
           $_SESSION["user_email"] = $_POST["user_email"];
 
+          $edate = date("Y/m/d");
+          $_SESSION["date"] = $edate; // Set session variable
+
           // Create DOM from URL or file
           $html = file_get_html('Ebus3.php');
-          // Find all <th> which attribute id=date
-          $edate = $html->find('th[id=date]'); 
-          $_SESSION["date"] = $edate; // Set session variable
 
           // Find all <th> which attribute id=randomCode
           $ecode = $html->find('th[id=randomCode]');
