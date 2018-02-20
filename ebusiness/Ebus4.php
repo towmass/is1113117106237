@@ -5,7 +5,7 @@ session_start();
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Receipt</title>
+        <title>Last Purchase</title>
         <link rel="stylesheet" href="../mystylesheet.css" type="text/css" />
 
         <!-- Link fonts -->
@@ -18,7 +18,8 @@ session_start();
 
     </head>
 
-<body>
+<body onload="noPurchaseMade();"> <!-- Runs function on body load -->
+
         <!-- Navigation bar -->
  <ul class="nav-bar">
     <a class="logo" href="../homepage.html">
@@ -64,8 +65,6 @@ session_start();
     </div>
  </ul>
     <!-- End of navigation -->
-
-    <script>noPurchaseMade();</script>
 
     <div class="container">
         <h2 class="heading">Last Purchase</h2>
@@ -140,12 +139,6 @@ session_start();
             &copy; 2018 Tomas Mandok
         </div>
         <!-- End of footer -->
-
-        <?php
-          // Set session variables
-          $_SESSION["date"] = $_POST["date"];
-          $_SESSION["code"] = $_POST["code"];
-        ?>
 
     </body>
 </html>

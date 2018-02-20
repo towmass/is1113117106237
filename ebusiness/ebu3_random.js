@@ -12,7 +12,7 @@ function randomCodeGenerator() {
 } // End of function
 
 function noPurchaseMade() {
-  if (getElementById("codeReceipt") == "") {
+  if (document.getElementById("codeReceipt") == "") {
     var noPurchase =
       "We could not find any purchase. Please order one of our products in the E-Business section.";
     document.getElementById("instruction").innerHTML = noPurchase;

@@ -18,7 +18,8 @@ session_start();
 
     </head>
 
-<body>
+<body onload="randomCodeGenerator();"> <!-- Generates purchase code on body load -->
+
         <!-- Navigation bar -->
  <ul class="nav-bar">
     <a class="logo" href="../homepage.html">
@@ -73,13 +74,11 @@ session_start();
 
         <tr>
             <th>Receipt Code</th>
-            <th id="randomCode" class="strong" name="code">
-              <script>randomCodeGenerator();</script>
-            </th>
+            <th id="randomCode" class="strong" name="code"></th>
         </tr>
         <tr>
             <th>Date:</th>
-            <th name="date">
+            <th name="date" id="date">
                 <?php
                 //Echo date of purchase
                 echo date("Y/m/d"); ?>
@@ -131,8 +130,19 @@ session_start();
 
         <?php
           // Set session variables
-          $_SESSION["date"] = $_POST["date"];
-          $_SESSION["code"] = $_POST["code"];
+          $_SESSION["user_name"] = $_POST["user_name"];
+          $_SESSION["user_address"] = $_POST["user_address"];
+          $_SESSION["user_email"] = $_POST["user_email"];
+
+          // Create DOM from URL or file
+          $html = file_get_html('Ebus3.php');
+          // Find all <th> which attribute id=date
+          $edate = $html->find('th[id=date]'); 
+          $_SESSION["date"] = $edate; // Set session variable
+
+          // Find all <th> which attribute id=randomCode
+          $ecode = $html->find('th[id=randomCode]');
+          $_SESSION["code"] = $ecode; //Set session variable
         ?>
 
     </body>

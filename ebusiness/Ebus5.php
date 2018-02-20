@@ -5,7 +5,7 @@ session_start();
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Receipt</title>
+        <title>Purchase Deleted</title>
         <link rel="stylesheet" href="../mystylesheet.css" type="text/css" />
 
         <!-- Link fonts -->
@@ -77,7 +77,7 @@ session_start();
         <!-- End of footer -->
 
         <?php
-          session_destroy();
+          session_unset();
         ?>
 
     </body>
