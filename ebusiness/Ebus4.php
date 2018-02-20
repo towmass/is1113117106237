@@ -74,7 +74,7 @@ session_start();
 
         <tr>
             <th>Receipt Code</th>
-            <th id="codeReceipt">
+            <th id="codeReceipt" class="strong">
                 <?php
                 //Echo session variable
                 echo $_SESSION["code"];

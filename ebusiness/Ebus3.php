@@ -15,10 +15,11 @@ session_start();
 
         <!-- Load random code generator JS file -->
         <script type="text/javascript" src="ebus3_random.js"></script>
+        <!-- EDIT: WILL NOT WORK BECAUSE OF NO INTERACTION WITH THE PHP IN THE DEMANDED ORDER -->
 
     </head>
 
-<body onload="randomCodeGenerator();"> <!-- Generates purchase code on body load -->
+<body>
 
         <!-- Navigation bar -->
  <ul class="nav-bar">
@@ -75,6 +76,9 @@ session_start();
         <tr>
             <th>Receipt Code</th>
             <th id="randomCode" class="strong" name="code"></th>
+              <?php
+                $rand = substr(md5(microtime()),rand(0,9),6);
+              ?>
         </tr>
         <tr>
             <th>Date:</th>
@@ -137,11 +141,7 @@ session_start();
           $edate = date("Y/m/d");
           $_SESSION["date"] = $edate; // Set session variable
 
-          // Create DOM from URL or file
-          $html = file_get_html('Ebus3.php');
-
-          // Find all <th> which attribute id=randomCode
-          $ecode = $html->find('th[id=randomCode]');
+          $ecode = $rand;
           $_SESSION["code"] = $ecode; //Set session variable
         ?>
 
