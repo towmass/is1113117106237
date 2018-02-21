@@ -86,6 +86,7 @@ p {
   border-collapse: collapse;
   min-width: 70%;
   text-align: left;
+  position: relative;
 }
 .interests th,
 td {
@@ -287,6 +288,7 @@ td {
   text-decoration: none;
   background: rgba(0, 0, 0, 0.3);
   padding: 12px 30px;
+  position: relative;
 }
 .next:hover {
   color: rgb(255, 255, 255);
@@ -294,6 +296,7 @@ td {
   background: rgba(0, 0, 0, 0.5);
   padding: 12px 30px;
   box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.24), 0 5px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
 }
 .add {
   color: white;
@@ -474,6 +477,7 @@ input[value] {
   border-bottom: 1px solid rgb(255, 255, 255);
 }
 .receipt {
-  text-align: center;
+  text-align: justify;
+  width: 70%;
 }
 /* END OF EBUSINESS */

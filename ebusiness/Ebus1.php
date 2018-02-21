@@ -42,6 +42,13 @@
         </div>
       </li>
       <li class="nav-item nav-dropdown">
+        <a href="javascript:void(0)" class="dropbutton">About Us</a>
+        <div class="dropdown-content">
+          <a href="company.html">Our Company</a>
+          <a href="cloud.html">About Cloud</a>
+        </div>
+      </li>
+      <li class="nav-item nav-dropdown">
         <a href="javascript:void(0)" class="dropbutton">E-Business</a>
         <div class="dropdown-content">
           <a href="Ebus1.php">Make Purchase</a>

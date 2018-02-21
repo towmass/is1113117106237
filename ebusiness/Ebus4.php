@@ -15,8 +15,9 @@ session_start();
                 if ($.trim($("#codeReceipt").html()).length == 0 || $.trim($("#nameCheck").html()).length == 0) {
                 var tip = $("#instruction").text(
                     "We could not find any purchase. Please order one of our products in the E-Business section."
-                );
-                disableButton();
+                ); // Set a new text in selected paragraph
+                $("#receiptDetails").remove(); // Delete receipt table if condition is met
+                disableButton(); // Disable given button
                 } // End of if
             } // End of function
             );
@@ -24,8 +25,7 @@ session_start();
             function disableButton() {
             $("#deleteButton").prop("disabled", true);
             }
-
-            window.onload = noPurchaseMade;
+            
         </script>
 
         <!-- Link fonts -->
@@ -33,12 +33,9 @@ session_start();
         <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text" rel="stylesheet">
         <!-- End of link fonts -->
 
-        <!-- Load random code generator JS file -->
-        <script type="text/javascript" src="ebus3_random.js"></script>
-
     </head>
 
-<body onload="noPurchaseMade();"> <!-- Runs function on body load -->
+<body>
 
         <!-- Navigation bar -->
  <ul class="nav-bar">
@@ -66,6 +63,13 @@ session_start();
         </div>
       </li>
       <li class="nav-item nav-dropdown">
+        <a href="javascript:void(0)" class="dropbutton">About Us</a>
+        <div class="dropdown-content">
+          <a href="company.html">Our Company</a>
+          <a href="cloud.html">About Cloud</a>
+        </div>
+      </li>
+      <li class="nav-item nav-dropdown">
         <a href="javascript:void(0)" class="dropbutton">E-Business</a>
         <div class="dropdown-content">
           <a href="Ebus1.php">Make Purchase</a>
@@ -90,7 +94,7 @@ session_start();
         <h2 class="heading">Last Purchase</h2>
         <div class="content">
 
-        <table class="interests">
+        <table class="interests" id="receiptDetails">
 
         <tr>
             <th>Receipt Code:</th>
@@ -148,8 +152,7 @@ session_start();
         </tr>
       </table>
       <br/>
-      <button class="validate" onclick="noPurchaseMade()">Validate</button>
-      <p id="instruction" class="receipt">If you wish to delete your last purchase, click the button below.</p>
+      <p id="instruction" class="receipt">If you wish to delete your last purchase, please click the button below.</p>
       <br/>
       <button class="add" onclick="location.href='Ebus5.php';" id="deleteButton">Delete Last Purchase</button>
     </div>
