@@ -1,13 +1,14 @@
-var receipt = $("#codeReceipt").val();
-
-function noPurchaseMade() {
-  if (receipt == "") {
-    var tip = $("#instruction").text(
-      "We could not find any purchase. Please order one of our products in the E-Business section."
-    );
-    disableButton();
-  } // End of if
-} // End of function
+// A $( document ).ready() block.
+$(document).ready(
+  function noPurchaseMade() {
+    if ($.trim($("#codeReceipt").text()).length == 0) {
+      var tip = $("#instruction").text(
+        "We could not find any purchase. Please order one of our products in the E-Business section."
+      );
+      disableButton();
+    } // End of if
+  } // End of function
+);
 
 function disableButton() {
   $("#deleteButton").prop("disabled", true);

@@ -9,6 +9,24 @@ session_start();
         <link rel="stylesheet" href="../mystylesheet.css" type="text/css" />
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(
+            function noPurchaseMade() {
+                if ($.trim($("#codeReceipt").html()).length == 0 || $.trim($("#nameCheck").html()).length == 0) {
+                var tip = $("#instruction").text(
+                    "We could not find any purchase. Please order one of our products in the E-Business section."
+                );
+                disableButton();
+                } // End of if
+            } // End of function
+            );
+
+            function disableButton() {
+            $("#deleteButton").prop("disabled", true);
+            }
+
+            window.onload = noPurchaseMade;
+        </script>
 
         <!-- Link fonts -->
         <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
@@ -77,12 +95,10 @@ session_start();
         <tr>
             <th>Receipt Code:</th>
             <th id="codeReceipt" class="strong">
-                <strong>
                 <?php
                 //Echo session variable
                 echo $_SESSION["code"];
                 ?>
-                </strong>
             </th>
         </tr>
         <tr>
@@ -95,7 +111,7 @@ session_start();
             </th>
         </tr>
         <tr>
-            <th>Name:</th>
+            <th id="nameCheck">Name:</th>
             <th>
                 <?php
                 //Echo session variable
