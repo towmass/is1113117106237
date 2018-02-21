@@ -42,10 +42,10 @@ session_start();
         </div>
       </li>
       <li class="nav-item nav-dropdown">
-        <a href="../ebusiness/company.html" class="dropbutton">About Us</a>
+        <a href="javascript:void(0)" class="dropbutton">About Us</a>
         <div class="dropdown-content">
-          <a href="../ebusiness/company.html">Our Company</a>
-          <a href="../ebusiness/cloud.html">About Cloud</a>
+          <a href="company.html">Our Company</a>
+          <a href="cloud.html">About Cloud</a>
         </div>
       </li>
       <li class="nav-item nav-dropdown">
