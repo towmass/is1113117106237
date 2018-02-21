@@ -1,16 +1,16 @@
-var receipt = document.getElementById("codeReceipt");
+var receipt = $("#codeReceipt").val();
 
 function noPurchaseMade() {
-  if (receipt.length == 0) {
-    var noPurchase =
-      "We could not find any purchase. Please order one of our products in the E-Business section.";
-    document.getElementById("instruction").innerHTML = noPurchase;
+  if (receipt == "") {
+    var tip = $("#instruction").text(
+      "We could not find any purchase. Please order one of our products in the E-Business section."
+    );
     disableButton();
   } // End of if
 } // End of function
 
 function disableButton() {
-  document.getElementById("deleteButton").disabled = true;
+  $("#deleteButton").prop("disabled", true);
 } // End of function
 
 /* THIS PART WAS DELETED DUE TO COMPLICATIONS WITH VARIABLE VALUES TRANSFERS BETWEEN DIFFERENT LANGUAGES
