@@ -1,5 +1,7 @@
+var receipt = document.getElementById("codeReceipt");
+
 function noPurchaseMade() {
-  if (document.getElementById("codeReceipt") == "") {
+  if (receipt.length == 0) {
     var noPurchase =
       "We could not find any purchase. Please order one of our products in the E-Business section.";
     document.getElementById("instruction").innerHTML = noPurchase;

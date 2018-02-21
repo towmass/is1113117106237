@@ -74,12 +74,13 @@ session_start();
         <table class="interests">
 
         <tr>
-            <th>Receipt Code</th>
-            <th id="randomCode" class="strong" name="code"></th>
+            <th>Receipt Code:</th>
+            <th id="randomCode" class="strong" name="code">
               <?php
                 $rand = intval( "0" . rand(0,9) . rand(0,9) . rand(0,9) . rand(0,9) . rand(0,9) . rand(0,9) );
                 echo $rand;
-              ?>
+              ?>  
+            </th>
         </tr>
         <tr>
             <th>Date:</th>

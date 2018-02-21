@@ -73,12 +73,14 @@ session_start();
         <table class="interests">
 
         <tr>
-            <th>Receipt Code</th>
+            <th>Receipt Code:</th>
             <th id="codeReceipt" class="strong">
+                <strong>
                 <?php
                 //Echo session variable
                 echo $_SESSION["code"];
                 ?>
+                </strong>
             </th>
         </tr>
         <tr>
@@ -128,7 +130,8 @@ session_start();
         </tr>
       </table>
       <br/>
-      <p class="receipt" id="instruction">If you wish to delete your last purchase, please click the button below.</p>
+      <button class="validate" onclick="noPurchaseMade()">Validate</button>
+      <p id="instruction" class="receipt">If you wish to delete your last purchase, click the button below.</p>
       <br/>
       <button class="add" onclick="location.href='Ebus5.php';" id="deleteButton">Delete Last Purchase</button>
     </div>
