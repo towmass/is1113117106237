@@ -188,9 +188,6 @@ td {
 .nav-item {
   display: inline-block;
 }
-.nav-margin {
-  margin: 0 0 0 17%;
-}
 .nav-item a,
 .dropbutton {
   font-size: 16px;
@@ -215,6 +212,9 @@ td {
 }
 .active {
   background-color: rgba(0, 0, 0, 0.4);
+}
+.firstbtn {
+  margin: 0 0 0 7%;
 }
 .nav-dropdown {
   display: inline-block;

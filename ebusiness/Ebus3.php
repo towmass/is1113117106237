@@ -14,7 +14,7 @@ session_start();
         <!-- End of link fonts -->
 
         <!-- Load random code generator JS file -->
-        <script type="text/javascript" src="ebus3_random.js"></script>
+        <script src="ebus3_random.js"></script>
         <!-- EDIT: WILL NOT WORK BECAUSE OF NO INTERACTION WITH THE PHP IN THE DEMANDED ORDER -->
 
     </head>
@@ -23,11 +23,10 @@ session_start();
 
         <!-- Navigation bar -->
  <ul class="nav-bar">
-    <a class="logo" href="../homepage.html">
+      <li class="logo">
       TM Creative.
-    </a>
-    <div class="nav-margin">
-      <li class="nav-item">
+      </li>
+      <li class="nav-item firstbtn">
         <a href="../homepage.html">Home</a>
       </li>
       <li class="nav-item nav-dropdown">
@@ -70,7 +69,6 @@ session_start();
       <li class="nav-item">
         <a href="https://is1113117106237.herokuapp.com">Heroku App</a>
       </li>
-    </div>
  </ul>
     <!-- End of navigation -->
 

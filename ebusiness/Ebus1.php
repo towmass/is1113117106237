@@ -5,7 +5,7 @@
     <title>Select Product</title>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="cost_calc.js"></script>
+    <script src="cost_calc.js"></script>
 
     <link rel="stylesheet" href="../mystylesheet.css" type="text/css" />
 
@@ -18,11 +18,10 @@
 <body>
     <!-- Navigation bar -->
   <ul class="nav-bar">
-    <a class="logo" href="../homepage.html">
-      TM Creative.
-    </a>    
-    <div class="nav-margin">
-      <li class="nav-item">
+        <li class="logo">
+        TM Creative.
+        </li> 
+      <li class="nav-item firstbtn">
         <a href="../homepage.html">Home</a>
       </li>
       <li class="nav-item nav-dropdown">
@@ -65,7 +64,6 @@
       <li class="nav-item">
         <a href="https://is1113117106237.herokuapp.com">Heroku App</a>
       </li>
-    </div>
   </ul>
   <!-- End of navigation -->
 
