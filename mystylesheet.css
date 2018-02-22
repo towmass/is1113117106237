@@ -71,7 +71,7 @@ p {
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 .content {
-  max-width: 50%;
+  max-width: 60%;
   margin: 0 auto;
 }
 .smcontent {
@@ -502,11 +502,67 @@ input[value] {
   display: block;
 }
 .company-logo {
-  width: 40%;
+  width: 35%;
   float: right;
-  margin-left: 10px;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-left: 15px;
+  margin-top: 5%;
+  margin-bottom: 3%;
   overflow: auto;
 }
+
+/* Tips boxes */
+.tip {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 12px 30px;
+  position: relative;
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+  border: 1px solid rgb(233, 0, 241);
+  font-size: 18px;
+}
+.tip:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 12px 30px;
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.24), 0 5px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  border: 1px solid rgb(125, 0, 241);
+}
+
+.tip .tiptext {
+  visibility: hidden;
+  width: 500px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  text-align: justify;
+  border-radius: 6px;
+  padding: 10px 15px;
+  position: absolute;
+  z-index: 1;
+  top: 130%;
+  left: 0%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 2s;
+  font-size: 16px;
+}
+.tip .tiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+.tip:hover .tiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
 /* END OF EBUSINESS */
