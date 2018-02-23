@@ -71,7 +71,7 @@ session_start();
         <h2 class="heading">Purchase Deleted</h2>
         <div class="content">
       <br/>
-      <p class="receipt">Your last purchase has been deleted.</p>
+      <span class="receipt">Your last purchase has been deleted.</span>
     </div>
     </div>
 
