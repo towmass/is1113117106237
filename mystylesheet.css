@@ -173,6 +173,12 @@ td {
 }
 /* END OF LOGO */
 
+.cloudimage {
+  border-radius: 50%;
+  width: 13%;
+  border: 6px solid white;
+}
+
 /* ---------- NAVIGATION BAR STYLING ---------- */
 .nav-bar {
   list-style-type: none;

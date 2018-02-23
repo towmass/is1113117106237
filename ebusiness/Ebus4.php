@@ -151,7 +151,7 @@ session_start();
       </table>
       <br/>
       <span id="instruction" class="receipt">If you wish to delete your last purchase, please click the button below.</span>
-      <br/>
+      <br/><br/>
       <button class="add" onclick="location.href='Ebus5.php';" id="deleteButton">Delete Last Purchase</button>
     </div>
     </div>
