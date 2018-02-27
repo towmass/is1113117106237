@@ -13,7 +13,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  /* overflow: hidden; */
   color: white;
   text-shadow: 1px 1px 8px #000000;
 }
@@ -413,7 +412,8 @@ input[value] {
   opacity: 0;
   cursor: pointer;
 }
-/* Create a custom radio button */
+
+/* Creates a custom radio button */
 .check {
   position: absolute;
   top: 0;
@@ -423,25 +423,25 @@ input[value] {
   background: rgba(0, 0, 0, 0.4);
   border-radius: 50%;
 }
-/* On mouse-over, add a grey background color */
+
 .radio:hover input ~ .check {
   background: rgba(0, 0, 0, 0.6);
 }
-/* When the radio button is checked, add a blue background */
+
 .radio input:checked ~ .check {
   background: linear-gradient(145deg, #c41cc4 1%, #a80fd6 52%, #8200ce 76%);
 }
-/* Create the indicator (the dot/circle - hidden when not checked) */
+
 .check:after {
   content: "";
   position: absolute;
   display: none;
 }
-/* Show the indicator (dot/circle) when checked */
+
 .raio input:checked ~ .check:after {
   display: block;
 }
-/* End of radio */
+/* End of radio btn */
 
 .ebus1input {
   color: white;

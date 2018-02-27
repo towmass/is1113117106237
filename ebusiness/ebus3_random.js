@@ -1,4 +1,3 @@
-// A $( document ).ready() block.
 $(document).ready(
   function noPurchaseMade() {
     if ($.trim($("#codeReceipt").text()).length == 0) {
@@ -15,7 +14,7 @@ function disableButton() {
 } // End of function
 
 /* THIS PART WAS DELETED DUE TO COMPLICATIONS WITH VARIABLE VALUES TRANSFERS BETWEEN DIFFERENT LANGUAGES
-DIFFERENT APPROACH HAS BEEN CHOSEN INSTEAD - PURCHASE CODE GENERATOR WAS CREATED ONLY IN PHP
+-> DIFFERENT APPROACH HAS BEEN CHOSEN INSTEAD - PURCHASE CODE GENERATOR WAS CREATED ONLY IN PHP
 AND PASSED INTO SESSION VARIABLE AFTERWARDS.
 
 function randomCodeGenerator() {

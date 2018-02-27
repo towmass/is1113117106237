@@ -8,18 +8,18 @@ function validateDetails() {
   noemail = document.getElementById("user_email").value;
 
   // email validator set
-  var email, atpos, dotpos;
+  var email, atposition, dotposition;
   email = document.getElementById("user_email").value;
-  atpos = email.indexOf("@");
-  dotpos = email.lastIndexOf(".");
+  atposition = email.indexOf("@");
+  dotposition = email.lastIndexOf(".");
 
   if (noname == "" || noaddress == "" || noemail == "" || pin == "") {
     alert("Please enter your details.");
   } else if (
     String(pin).length < 4 ||
-    atpos < 1 ||
-    dotpos < atpos + 2 ||
-    dotpos + 2 >= email.length
+    atposition < 1 ||
+    dotposition < atposition + 2 ||
+    dotposition + 2 >= email.length
   ) {
     alert("Please make sure your PIN (4 digits) or email has a valid form.");
   } else {
